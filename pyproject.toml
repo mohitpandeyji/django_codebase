@@ -1,0 +1,45 @@
+[project]
+name = "codebase_django"
+version = "0.1.0"
+description = "My Django codebase."
+authors = [
+    "Federico Cardozo <fedecar94@outlook.com>"
+]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+python = "^3.8"
+homepage = "https://github.com/fedecar94/my-django-codebase"
+repository = "https://github.com/fedecar94/my-django-codebase"
+documentation = "https://github.com/fedecar94/my-django-codebase"
+
+keywords = ["codebase", "django", "rest", "api"]
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
+# Requirements
+
+[dev-dependencies]
+black = { version = "^21.6b0", python = "^3.8" }
+
+[tool.black]
+line-length = 120
+target_version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
